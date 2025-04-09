@@ -1,7 +1,120 @@
-h1 {
-    font-family: 'Inter', sans-serif;
-  }
-  
+/* Paleta de cores */
+:root {
+  --azul: #0074B7;
+  --azul-claro: #0074b769;
+  --cinza-escuro: #4A4A4A;
+  --cinza-medio: #666666;
+  --cinza-claro: #D3D3D3;
+  --destaque: #ADD8E6;
+  --footer: #0074b769;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--azul-claro);
+  text-align: center;
+  position: relative;
+}
+
+/* Componentes reutilizáveis */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Menu principal */
+.menu-principal {
+  width: 80%;
+  height: 50px;
+  background-color: var(--cinza-claro);
+  position:relative;
+  top: 50%; /* Posiciona no meio vertical */
+  left: 50%; /* Posiciona no meio horizontal */
+  transform: translate(-50%, -50%); /* Ajusta precisamente ao centro */
+  border-radius: 8px; /* Opcional: bordas arredondadas */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Opcional: sombra sutil */
+}
+
+.menu-principal ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.menu-principal a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 15px; /* Mais espaço horizontal */
+  display: block;
+  transition: background-color 0.3s ease; /* Suaviza a transição do hover */
+}
+
+.menu-principal a:hover {
+  background-color: var(--destaque);
+  border-radius: 4px; /* Bordas arredondadas no hover */
+}
+
+/* Topo */
+.topo {
+  width: 100%;
+  height: 320px;
+  background-color: var(--azul);
+  position: relative;
+}
+
+.imagem-topo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--footer);
+  color: #000;
+}
+
+footer a {
+  margin: 5px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px; 
+}
+
+footer a:hover {
+  background-color: var(--destaque);
+  border-radius: 4px;
+}
+
+/* Animação */
+#balls {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  width: 90px;
+  height: 60px;
+  animation: repeatBalls 300s infinite linear;
+}
+
+@keyframes repeatBalls {
+  0%, 100% { left: 0; }
+  50% { left: 100%; }
 }
