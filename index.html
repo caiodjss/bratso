@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto pessoal</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Projeto pessoal</title>
 
   </head>
 
   <body>
+    
     <div class="topo">
-      <img src="assets/logo-bratso.png" alt="Descrição da Imagem" class="imagem-topo">
+      <img src="assets/logo-bratso.png" class="imagem-topo">
     </div>
+
     <div class="menu-principal">
       <ul>
          <li>
-          <a href="#" id="home">Inicio</a></li>
+          <a onclick="mostrarTexto()" id="home">Inicio</a></li>
         <li>
-          <a href="#" id="about">Serviços</a></li>
+          <a onclick="mostrarTexto()" id="services">Serviços</a></li>
         <li>
-          <a href="#" id="services">Sobre</a></li>
+          <a onclick="mostrarTexto()" id="about">Sobre</a></li>
         <li>
-          <a href="#" id="contact">Contato</a></li>
+          <a onclick="mostrarTexto()" id="contact">Contato</a></li>
       </ul>
-
 
     </div>
     
-    <div id = "conteudo">    
-    </div>
+    <div id = "saida"> </div>
+
     <footer>
         <a href="https://www.instagram.com/caiodjss/" target="_blank">Instagram</a>
         <a href="mailto:cdj@outlook.com.br" target="_blank">Contato</a>

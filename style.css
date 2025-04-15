@@ -22,6 +22,8 @@ body {
   background-color: var(--azul-claro);
   text-align: center;
   position: relative;
+  font-size: 1.1rem; /* Aumentando o tamanho base da fonte */
+  line-height: 1.7; /* Aumentando o espaçamento das linhas para melhor legibilidade */
 }
 
 /* Componentes reutilizáveis */
@@ -37,11 +39,11 @@ body {
   height: 50px;
   background-color: var(--cinza-claro);
   position:relative;
-  top: 50%; /* Posiciona no meio vertical */
-  left: 50%; /* Posiciona no meio horizontal */
-  transform: translate(-50%, -50%); /* Ajusta precisamente ao centro */
-  border-radius: 8px; /* Opcional: bordas arredondadas */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Opcional: sombra sutil */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .menu-principal ul {
@@ -50,7 +52,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  gap: 20px;
+  gap: 25px; /* Aumentando o espaço entre os itens */
   margin: 0;
   padding: 0 20px;
 }
@@ -58,14 +60,15 @@ body {
 .menu-principal a {
   text-decoration: none;
   color: #000;
-  padding: 10px 15px; /* Mais espaço horizontal */
+  padding: 12px 18px; /* Aumentando o padding */
   display: block;
-  transition: background-color 0.3s ease; /* Suaviza a transição do hover */
+  font-size: 1.2rem; /* Aumentando o tamanho da fonte no menu */
+  transition: background-color 0.3s ease;
 }
 
 .menu-principal a:hover {
   background-color: var(--destaque);
-  border-radius: 4px; /* Bordas arredondadas no hover */
+  border-radius: 4px; 
 }
 
 /* Topo */
@@ -86,17 +89,18 @@ body {
 footer {
   margin-top: auto;
   width: 100%;
-  padding: 20px 0;
+  padding: 25px 0; /* Aumentando o padding do footer */
   background-color: var(--footer);
   color: #000;
 }
 
 footer a {
-  margin: 5px;
+  margin: 7px;
   color: #000;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 15px; 
+  padding: 12px 18px;
+  font-size: 1.1rem; /* Aumentando o tamanho da fonte no footer */
 }
 
 footer a:hover {
@@ -117,4 +121,100 @@ footer a:hover {
 @keyframes repeatBalls {
   0%, 100% { left: 0; }
   50% { left: 100%; }
+}
+
+.menu-principal ul li a {
+  cursor: pointer;
+}
+
+.menu-principal ul li a:hover {
+  cursor: pointer; 
+}
+
+.menu-principal ul li a:focus {
+  cursor: pointer;
+}
+
+#saida {
+  width: 80%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px; /* Aumentando o padding */
+  background-color: var(--azul-claro);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  line-height: 1.8; /* Aumentando o espaçamento das linhas */
+  font-size: 1.2rem; /* Aumentando o tamanho da fonte */
+}
+
+h2{
+  text-align: center;
+  padding: 40px; /* Aumentando o padding do título */
+  font-size: 2rem; /* Aumentando o tamanho da fonte do título */
+}
+
+/* Formulário de Contato */
+.formulario-contato {
+  width: 80%;
+  max-width: 700px;
+  margin: 40px auto; /* Aumentando o espaço ao redor do formulário */
+  padding: 35px; /* Aumentando o padding */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-family: Arial, sans-serif;
+  color: var(--cinza-escuro);
+}
+
+.formulario-contato h2 {
+  text-align: center;
+  margin-bottom: 30px; /* Aumentando o espaçamento */
+  color: var(--azul);
+  font-size: 2rem; /* Aumentando o tamanho da fonte do título */
+}
+
+.formulario-contato label {
+  display: block;
+  margin-bottom: 12px; /* Aumentando o espaço entre o rótulo e o campo */
+  font-weight: bold;
+  color: var(--cinza-escuro);
+  font-size: 1.1rem; /* Aumentando o tamanho da fonte dos rótulos */
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  width: 100%;
+  padding: 14px; /* Aumentando o padding nos campos */
+  margin-bottom: 25px; /* Aumentando o espaço entre os campos */
+  border: 1px solid var(--cinza-claro);
+  border-radius: 5px;
+  font-size: 1.1rem; /* Aumentando o tamanho da fonte nos campos */
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.formulario-contato input:focus,
+.formulario-contato textarea:focus {
+  outline: none;
+  border-color: var(--azul);
+}
+
+.formulario-contato button {
+  display: block;
+  width: 100%;
+  padding: 14px; /* Aumentando o padding do botão */
+  background-color: var(--azul);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem; /* Aumentando o tamanho da fonte do botão */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contato button:hover {
+  background-color: #005f94;
 }
