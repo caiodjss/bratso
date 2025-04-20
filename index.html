@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Pessoal - Bratso</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<body>
 
-    <title>Projeto pessoal</title>
-
-  </head>
-
-  <body>
-
-    <div class="topo">
-      <img src="assets/logo-bratso.png" class="imagem-topo">
-    </div>
-
-    <div class="menu-principal">
+  <header class="topo">
+    <img src="assets/logo-bratso.png" alt="Logo Bratso" class="imagem-topo">
+    <nav class="menu-principal">
       <ul>
-         <li>
-          <a onclick="mostrarTexto()" id="home">Inicio</a></li>
-        <li>
-          <a onclick="mostrarTexto()" id="services">Serviços</a></li>
-        <li>
-          <a onclick="mostrarTexto()" id="about">Sobre</a></li>
-        <li>
-          <a onclick="mostrarTexto()" id="contact">Contato</a></li>
+        <li><a onclick="mostrarTexto(event)" id="home">Início</a></li>
+        <li><a onclick="mostrarTexto(event)" id="services">Serviços</a></li>
+        <li><a onclick="mostrarTexto(event)" id="about">Sobre</a></li>
+        <li><a onclick="mostrarTexto(event)" id="contact">Contato</a></li>
       </ul>
+    </nav>
+  </header>
 
-    </div>
-    
-    <div id = "saida"> </div>
+  <main id="saida">
+    <!-- Conteúdo dinâmico carregado aqui -->
+  </main>
 
-    <footer>
+  <footer>
+    <div class="footer-content">
+      <div class="social-links">
         <a href="https://www.instagram.com/caiodjss/" target="_blank">Instagram</a>
         <a href="mailto:cdj@outlook.com.br" target="_blank">Contato</a>
-        &copy; <span>Bratso 💚</span>
-        <img id="balls" src="assets/balls.svg" alt="Bolinhas Laranjadas no canto direito inferior da tela">
-    </footer>
+      </div>
+      <p>&copy; 2025 <strong>Bratso 💚</strong></p>
+    </div>
+    <img id="balls" src="assets/balls.svg" alt="Bolinhas decorativas no canto direito inferior">
+  </footer>
 
-    <script src="script.js"></script>
-
-  </body>
+</body>
 </html>
