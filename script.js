@@ -25,7 +25,7 @@ function carregarConteudo(itemId) {
     });
 }
 
-// ➡️ Carregar o conteúdo "Início" automaticamente assim que o site abrir
+// Carregar o conteúdo "Início" automaticamente ao abrir o site
 document.addEventListener('DOMContentLoaded', () => {
   carregarConteudo('home');
 });
