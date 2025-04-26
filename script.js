@@ -29,3 +29,8 @@ function carregarConteudo(itemId) {
 document.addEventListener('DOMContentLoaded', () => {
   carregarConteudo('home');
 });
+
+
+function emBreve(){
+  alert("Em Breve")
+}

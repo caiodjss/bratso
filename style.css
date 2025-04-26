@@ -150,7 +150,7 @@ footer {
   background: var(--footer);
   color: var(--branco);
   padding: 2rem 1rem;
-  text-align: center;
+ 
   position: relative;
   margin-top: 3rem;
 }
@@ -158,6 +158,7 @@ footer {
 .footer-content {
   display: flex;
   flex-direction: column;
+  text-align: center;
   gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -491,4 +492,9 @@ footer {
   font-size: 1rem;
   color: var(--cinza);
   margin-bottom: 1rem;
+}
+
+.lista-footer{
+  text-align: left;
+  padding: 40px;
 }
