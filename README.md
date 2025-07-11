@@ -3,7 +3,6 @@
 Este é o repositório do site institucional da **Bratso**.
 
 🛠️ **Status**: Em desenvolvimento  
-🌐 **Acesse o site**: [https://caiodjss.github.io/bratso/](https://caiodjss.github.io/bratso/)
 
 ## 📄 Sobre
 
@@ -22,5 +21,3 @@ Este projeto tem como objetivo apresentar as informações institucionais da emp
 - Otimizações de acessibilidade e SEO
 
 ---
-
-© 2025 Bratso. Todos os direitos reservados.
